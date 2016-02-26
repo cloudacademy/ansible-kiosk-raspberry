@@ -1,0 +1,8 @@
+- name: create cron job for screenoff
+  cron: name="turn screen off" hour=20 job="/bin/sh /home/pi/scripts/screenoff.sh"
+
+- name: create cron job for screenon
+  cron: name="turn screen on" hour=7 job="/bin/sh /home/pi/scripts/screenon.sh"
+
+- name: create cron job for system update
+  cron: name="update and reboot system" hour=23 job="/bin/sh /home/pi/scripts/update.sh"

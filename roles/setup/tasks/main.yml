@@ -1,0 +1,15 @@
+---
+- name: upgrade all apt packages
+  apt: upgrade=full update_cache=yes
+
+# - name: extend partition
+#   lvol: vg=firefly lv=test size=14336
+
+- name: install iceweasel
+  apt: pkg=iceweasel state=latest update_cache=yes
+
+- include: copy_scripts.yml
+
+- include: create_cron_jobs.yml
+
+- include: create_autostart.yml

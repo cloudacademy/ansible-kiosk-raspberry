@@ -1,0 +1,5 @@
+# Ansible
+playbook.retry
+
+# Vagrant
+test/.vagrant

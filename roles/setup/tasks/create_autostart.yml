@@ -1,0 +1,5 @@
+- name: create autostart directory
+  file: path=/etc/xdg/lxsession/LXDE-pi state=directory
+
+- name: copy start script
+  template: src=autostart dest=/etc/xdg/lxsession/LXDE-pi/

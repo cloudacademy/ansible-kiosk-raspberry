@@ -1,0 +1,14 @@
+- name: create scripts directory
+  file: path=/home/pi/scripts state=directory
+
+- name: copy start script
+  template: src=start.sh dest=/home/pi/scripts/
+
+- name: copy screenoff script
+  template: src=screenoff.sh dest=/home/pi/scripts/
+
+- name: copy screenon script
+  template: src=screenon.sh dest=/home/pi/scripts/
+
+- name: copy update script
+  template: src=update.sh dest=/home/pi/scripts/
