@@ -1,4 +1,4 @@
-# This guide is optimized for Vagrant 1.7 and above.
+# This config is optimized for Vagrant 1.7 and above.
 # Although versions 1.6.x should behave very similarly, it is recommended
 # to upgrade instead of disabling the requirement below.
 Vagrant.require_version ">= 1.7.0"
