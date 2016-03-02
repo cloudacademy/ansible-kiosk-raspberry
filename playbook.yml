@@ -2,7 +2,6 @@
 - name: Configure Pi for kiosk mode
 
   hosts: all
-  user: pi
   become: yes
   roles:
     - setup
