@@ -2,6 +2,8 @@
 - name: upgrade all apt packages
   apt: upgrade=full update_cache=yes
 
+- include: change_password.yml
+
 - include: expand_filesystem.yml
 
 - name: install iceweasel
