@@ -2,8 +2,7 @@
 - name: upgrade all apt packages
   apt: upgrade=full update_cache=yes
 
-# - name: extend partition
-#   lvol: vg=firefly lv=test size=14336
+- include: expand_filesystem.yml
 
 - name: install iceweasel
   apt: pkg=iceweasel state=latest update_cache=yes

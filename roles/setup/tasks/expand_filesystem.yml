@@ -1,0 +1,3 @@
+---
+- name: expand filesystem
+  filesystem: fstype=ext4 dev=/dev/sda1 resizefs=yes

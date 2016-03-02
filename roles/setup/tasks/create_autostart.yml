@@ -1,3 +1,4 @@
+---
 - name: create autostart directory
   file: path=/etc/xdg/lxsession/LXDE-pi state=directory
 

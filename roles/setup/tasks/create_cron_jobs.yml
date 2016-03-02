@@ -1,3 +1,4 @@
+---
 - name: create cron job for screenoff
   cron: name="turn screen off" hour=20 job="/bin/sh /home/pi/scripts/screenoff.sh"
 
