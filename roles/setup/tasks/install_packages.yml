@@ -2,11 +2,10 @@
 - name: upgrade all apt packages
   apt: upgrade=full update_cache=yes
 
-- name: install unclutter
-  apt: pkg=unclutter state=latest update_cache=yes
-
-- name: install imagemagick
-  apt: pkg=imagemagick state=latest update_cache=yes
-
-- name: install iceweasel
-  apt: pkg=iceweasel state=latest update_cache=yes
+- name: Install {{item}}
+  apt: pkg={{item}} state=installed
+  sudo: yes
+  with_items:
+  - unclutter
+  - imagemagick
+  - iceweasel
