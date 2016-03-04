@@ -10,4 +10,4 @@ This playbook allows you to set up a Raspberry Pi which displays a website in fu
 
 ## Usage
 1. Change the `[screens]` group in the `hosts` file to contain the IPs of your Raspberry Pis
-2. Run `ansible-playbook playbook.yml i- hosts`
+2. Run `ansible-playbook playbook.yml`
