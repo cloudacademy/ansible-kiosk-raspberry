@@ -1,12 +1,7 @@
 ---
 - name: configure raspis for kiosk mode
-  hosts: all
+  hosts: screens
   become: yes
-
-  vars_prompt:
-    - name: new_password
-      prompt: what shall be your new password?
-      private: yes
 
   roles:
     - charleskorn.raspi-expanded-rootfs
