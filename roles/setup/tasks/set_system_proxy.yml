@@ -1,0 +1,9 @@
+---
+- name: copy system http proxy
+  lineinfile: dest=/etc/environment line="export http_proxy: http://proxy.corproot.net:8079"
+
+- name: set system https proxy
+  lineinfile: dest=/etc/environment line="export https_proxy: https://proxy.corproot.net:8079"
+
+- name: reload environment
+  shell: source /etc/environment

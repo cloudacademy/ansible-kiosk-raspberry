@@ -1,0 +1,9 @@
+---
+- name: set iceweasel http proxy
+  lineinfile: dest=/etc/iceweasel/profile/prefs.js line="user_pref("network.proxy.http", "http://proxy.corproot.net:8079");"
+
+- name: set iceweasel https proxy
+  lineinfile: dest=/etc/iceweasel/profile/prefs.js line="user_pref("network.proxy.https", "https://proxy.corproot.net:8079");"
+
+- name: set iceweasel https proxy
+  lineinfile: dest=/etc/iceweasel/profile/localstore.rdf line="sizemode="fullscreen"
