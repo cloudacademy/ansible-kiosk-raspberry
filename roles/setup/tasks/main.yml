@@ -1,9 +1,7 @@
 ---
-- name: upgrade all apt packages
-  apt: upgrade=full update_cache=yes
+- hostname: name={{ inventory_hostname }}
 
-- name: install iceweasel
-  apt: pkg=iceweasel state=latest update_cache=yes
+- include: install_packages.yml
 
 - include: copy_scripts.yml
 
