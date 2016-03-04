@@ -3,13 +3,13 @@
   file: path=/home/pi/scripts state=directory
 
 - name: copy start script
-  template: src=start.sh dest=/home/pi/scripts/
+  template: src=start.sh dest=/home/pi/scripts/ mode=u+x
 
 - name: copy screenoff script
-  template: src=screenoff.sh dest=/home/pi/scripts/
+  template: src=screenoff.sh dest=/home/pi/scripts/ mode=u+x
 
 - name: copy screenon script
-  template: src=screenon.sh dest=/home/pi/scripts/
+  template: src=screenon.sh dest=/home/pi/scripts/ mode=u+x
 
 - name: copy update script
-  template: src=update.sh dest=/home/pi/scripts/
+  template: src=update.sh dest=/home/pi/scripts/ mode=u+x
