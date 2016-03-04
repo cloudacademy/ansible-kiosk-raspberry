@@ -9,4 +9,9 @@
       private: yes
 
   roles:
+    - charleskorn.raspi-expanded-rootfs
     - setup
+
+  environment:
+    http_proxy: http://proxy.corproot.net:8079
+    https_proxy: https://proxy.corproot.net:8079
