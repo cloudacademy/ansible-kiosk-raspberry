@@ -4,3 +4,5 @@
 
 - name: copy start script
   template: src=autostart dest=/etc/xdg/lxsession/LXDE-pi/
+  notify:
+  - reboot
