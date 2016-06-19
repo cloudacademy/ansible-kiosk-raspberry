@@ -1,8 +1,8 @@
 ---
 - name: create autostart directory
-  file: path=/etc/xdg/lxsession/LXDE-pi state=directory
+  file: path=/home/pi/.config/lxsession/LXDE-pi state=directory
 
 - name: copy start script
-  template: src=autostart dest=/etc/xdg/lxsession/LXDE-pi/
+  template: src=autostart dest=/home/pi/.config/lxsession/LXDE-pi/
   notify:
   - reboot

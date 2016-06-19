@@ -1,11 +1,7 @@
 ---
-- include: set_system_proxy.yml
-
 - hostname: name={{ inventory_hostname }}
 
 - include: install_packages.yml
-
-- include: iceweasel_settings.yml
 
 - include: copy_scripts.yml
 
