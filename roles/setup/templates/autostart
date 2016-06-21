@@ -5,4 +5,5 @@
 @xset s off
 @xset -dpms
 @xset s noblank
+@sh /home/pi/scripts/vnc.sh
 @sh /home/pi/scripts/start.sh

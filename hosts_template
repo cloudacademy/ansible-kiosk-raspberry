@@ -4,3 +4,4 @@ screen-a.piscreens	website=https://google.com/
 [screens:vars]
 ansible_ssh_user=pi
 ansible_ssh_pass=raspberry
+vncpass=CHANGE_YOUR_PASSWORD
