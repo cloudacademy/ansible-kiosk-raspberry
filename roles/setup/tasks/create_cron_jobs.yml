@@ -1,3 +1,3 @@
 ---
 - name: create cron job for system update
-  cron: name="update and reboot system" hour=23 job="/bin/sh /home/pi/scripts/update.sh"
+  cron: name="update and reboot system" hour=20 job="/bin/sh /home/pi/scripts/update.sh"

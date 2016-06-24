@@ -5,6 +5,9 @@
 - name: copy start script
   template: src=start.sh dest=/home/pi/scripts/ mode=u+x
 
+- name: copy update script
+  template: src=fullscreen.sh dest=/home/pi/scripts/ mode=u+x
+
 - name: copy vnc script
   template: src=vnc.sh dest=/home/pi/scripts/ mode=u+x
 
